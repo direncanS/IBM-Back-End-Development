@@ -15,3 +15,16 @@ python -m venv .venv
 pip install -r requirements.txt -r requirements-dev.txt
 python -m pytest -q
 uvicorn app.main:app --reload
+
+## Endpoints
+- GET /health -> {"status": "healthy"}
+
+## Docs
+- Swagger UI: http://127.0.0.1:8000/docs
+
+## Repo structure
+- app/ FastAPI source code
+- tests/ pytest tests
+- docs/learning/ module/week notes
+- docs/tracker/ progress tracking
+
